@@ -13,3 +13,5 @@ su - vagrant -c 'rbenv install 2.3.0'
 su - vagrant -c 'rbenv local 2.3.0'
 
 su - vagrant -c 'gem install rails -v 4.2.6'
+
+npm install -g browserify
