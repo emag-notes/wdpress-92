@@ -33,7 +33,7 @@ Vagrant.configure(2) do |config|
   config.vm.define :rails do |rails|
     rails.vm.hostname = "rails"
     rails.vm.network "private_network", ip: "192.168.101.10"
-    # rails.vm.provision :shell, :path => "./provisioning/rails/install-packages.sh"
+    rails.vm.provision :shell, :path => "./provisioning/rails/install-packages.sh"
     # rails.vm.provision :shell, :path => "./provisioning/rails/rails-settings.sh"
   end
 
