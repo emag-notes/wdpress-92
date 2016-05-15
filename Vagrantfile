@@ -20,6 +20,7 @@ Vagrant.configure(2) do |config|
     shell.args = ""
   end
 
+  config.vm.provision :shell, :path => "./provisioning/common/uninstall-packages.sh"
   config.vm.provision :shell, :path => "./provisioning/common/fast-mirror.sh"
   config.vm.provision :shell, :path => "./provisioning/common/yum-update.sh"
   config.vm.provision :shell, :path => "./provisioning/common/install-packages.sh"
