@@ -29,12 +29,12 @@ Vagrant.configure(2) do |config|
   config.vm.provision :shell, :path => "./provisioning/common/ntp.sh"
   config.vm.provision :shell, :path => "./provisioning/common/disable-firewalld.sh"
 
-  # rails
-  config.vm.define :rails do |rails|
-    rails.vm.hostname = "rails"
-    rails.vm.network "private_network", ip: "192.168.101.10"
-    rails.vm.provision :shell, :path => "./provisioning/rails/install-packages.sh"
-    rails.vm.provision :shell, :path => "./provisioning/rails/setup.sh"
+  # app
+  config.vm.define :app do |app|
+    app.vm.hostname = "app"
+    app.vm.network "private_network", ip: "192.168.101.10"
+    app.vm.provision :shell, :path => "./provisioning/app/install-packages.sh"
+    app.vm.provision :shell, :path => "./provisioning/app/setup.sh"
   end
 
 end
