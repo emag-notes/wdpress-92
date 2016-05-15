@@ -1,5 +1,6 @@
 #!/bin/sh
 
+yum -y install https://rpm.nodesource.com/pub_4.x/el/7/x86_64/nodesource-release-el7-1.noarch.rpm
 yum -y install git openssl-devel readline-devel zlib-devel sqlite-devel nodejs
 
 su - vagrant -c 'git clone https://github.com/rbenv/rbenv.git ~/.rbenv'
