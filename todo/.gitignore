@@ -49,6 +49,8 @@ bower.json
 # Ignore Byebug command history file.
 .byebug_history
 
+bundle.js
+
 #######################
 # nodejs
 # https://github.com/github/gitignore/blob/master/Node.gitignore
