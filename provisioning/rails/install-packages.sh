@@ -1,6 +1,6 @@
 #!/bin/sh
 
-yum -y install git openssl-devel readline-devel zlib-devel
+yum -y install git openssl-devel readline-devel zlib-devel sqlite-devel nodejs
 
 su - vagrant -c 'git clone https://github.com/rbenv/rbenv.git ~/.rbenv'
 su - vagrant -c 'git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build'
